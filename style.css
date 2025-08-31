@@ -1,4 +1,4 @@
-/* Version: #4 */
+/* Version: #8 */
 body {
     background-color: #282c34;
     color: white;
@@ -37,9 +37,29 @@ h1 {
     margin-top: 20px;
 }
 
+/* NYTT: Styling for tone-visningsboksen */
+#pitch-display {
+    border: 2px solid #9a9a9a;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+#pitch-display p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+#pitch-display span {
+    font-weight: bold;
+    color: #61dafb;
+}
+
 #statusMessage {
     margin-top: 20px;
     font-style: italic;
     color: #9a9a9a;
 }
-/* Version: #4 */
+/* Version: #8 */
