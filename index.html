@@ -1,27 +1,32 @@
-<!-- Version: #3 -->
+<!-- Version: #7 -->
 <!DOCTYPE html>
 <html lang="no">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Music Practice App</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Practice App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-code
-Code
-<h1>Music Practice App</h1>
-<p>Steg 1: Mikrofontilgang og Visualisering</p>
 
-<div id="controls">
-    <button id="startButton">Start Mikrofon</button>
-</div>
+    <h1>Music Practice App</h1>
+    <p>Steg 2: Tone-deteksjon</p>
 
-<canvas id="visualizer" width="640" height="200"></canvas>
+    <div id="controls">
+        <button id="startButton">Start Mikrofon</button>
+    </div>
 
-<p id="statusMessage">Klikk "Start Mikrofon" for å begynne.</p>
+    <canvas id="visualizer" width="640" height="200"></canvas>
 
-<script src="script.js"></script>
+    <!-- NYTT: Område for å vise tone-deteksjon -->
+    <div id="pitch-display">
+        <p>Frekvens: <span id="frequencyValue">---</span> Hz</p>
+        <p>Note: <span id="noteName">---</span></p>
+    </div>
+
+    <p id="statusMessage">Klikk "Start Mikrofon" for å begynne.</p>
+
+    <script src="script.js"></script>
 </body>
 </html>
-<!-- Version: #3 -->
+<!-- Version: #7 -->
