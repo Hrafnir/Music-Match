@@ -1,4 +1,4 @@
-<!-- Version: #7 -->
+<!-- Version: #13 -->
 <!DOCTYPE html>
 <html lang="no">
 <head>
@@ -10,15 +10,35 @@
 <body>
 
     <h1>Music Practice App</h1>
-    <p>Steg 2: Tone-deteksjon</p>
+    <p>Steg 3: Laste sangdata</p>
 
     <div id="controls">
         <button id="startButton">Start Mikrofon</button>
     </div>
 
-    <canvas id="visualizer" width="640" height="200"></canvas>
+    <!-- NYTT: Seksjon for å laste og kontrollere sanger -->
+    <div id="song-controls" class="control-panel">
+        <div class="control-group">
+            <label for="songSelector">Velg sang:</label>
+            <select id="songSelector">
+                <option value="songs/bjornen_sover.json">Bjørnen Sover</option>
+                <!-- Flere sanger kan legges til her senere -->
+            </select>
+            <button id="loadSongButton">Last sang</button>
+        </div>
+        <div class="control-group">
+            <label for="partSelector">Velg stemme:</label>
+            <select id="partSelector" disabled>
+                <option>-- Velg stemme --</option>
+            </select>
+            <button id="playSongButton" disabled>Spill av</button>
+        </div>
+        <p>Status: <span id="songStatus">Ingen sang lastet</span></p>
+    </div>
 
-    <!-- NYTT: Område for å vise tone-deteksjon -->
+
+    <canvas id="visualizer" width="640" height="200"></canvas>
+    
     <div id="pitch-display">
         <p>Frekvens: <span id="frequencyValue">---</span> Hz</p>
         <p>Note: <span id="noteName">---</span></p>
@@ -29,4 +49,4 @@
     <script src="script.js"></script>
 </body>
 </html>
-<!-- Version: #7 -->
+<!-- Version: #13 -->
