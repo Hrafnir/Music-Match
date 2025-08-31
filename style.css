@@ -1,4 +1,4 @@
-/* Version: #8 */
+/* Version: #14 */
 body {
     background-color: #282c34;
     color: white;
@@ -9,6 +9,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
+    padding: 20px 0; /* Litt padding for å unngå at innhold treffer kantene */
 }
 
 h1 {
@@ -31,13 +32,61 @@ h1 {
     background-color: #21a1f1;
 }
 
+/* NYTT: Styling for kontrollpaneler generelt */
+.control-panel {
+    border: 2px solid #9a9a9a;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #32363e;
+    width: 600px;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.control-group label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.control-group select, .control-group button {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #61dafb;
+    background-color: #282c34;
+    color: white;
+}
+
+.control-group button {
+    cursor: pointer;
+    background-color: #61dafb;
+    color: #282c34;
+}
+
+.control-group button:disabled {
+    background-color: #555;
+    border-color: #777;
+    cursor: not-allowed;
+    color: #aaa;
+}
+
+#songStatus {
+    font-style: italic;
+    color: #bbb;
+}
+
 #visualizer {
     background-color: #1e2127;
     border: 2px solid #61dafb;
     margin-top: 20px;
 }
 
-/* NYTT: Styling for tone-visningsboksen */
 #pitch-display {
     border: 2px solid #9a9a9a;
     border-radius: 5px;
@@ -45,6 +94,7 @@ h1 {
     margin-top: 20px;
     width: 250px;
     text-align: center;
+    background-color: #32363e;
 }
 
 #pitch-display p {
@@ -62,4 +112,4 @@ h1 {
     font-style: italic;
     color: #9a9a9a;
 }
-/* Version: #8 */
+/* Version: #14 */
