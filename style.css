@@ -1,0 +1,45 @@
+/* Version: #4 */
+body {
+    background-color: #282c34;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #61dafb;
+}
+
+#controls button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #61dafb;
+    color: #282c34;
+    cursor: pointer;
+    margin: 20px;
+    transition: background-color 0.2s;
+}
+
+#controls button:hover {
+    background-color: #21a1f1;
+}
+
+#visualizer {
+    background-color: #1e2127;
+    border: 2px solid #61dafb;
+    margin-top: 20px;
+}
+
+#statusMessage {
+    margin-top: 20px;
+    font-style: italic;
+    color: #9a9a9a;
+}
+/* Version: #4 */
